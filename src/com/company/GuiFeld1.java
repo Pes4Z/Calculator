@@ -21,7 +21,7 @@ public class GuiFeld1 extends JFrame {
 
     private String operator;
 
-    //Gui für Hoch2 Rechnungen
+    //Creates the Gui for square number calculations
     public GuiFeld1(String titel, String operator){
         this.operator = operator;
 
@@ -50,7 +50,7 @@ public class GuiFeld1 extends JFrame {
 
     }
 
-    //Öffnet das Fenster mit dem Operator für Addition
+    //Opens the window with the operator for addition
     private void FensterAddition() {
         if (this.operator.equals("+")) {
             setVisible(false);
@@ -59,7 +59,7 @@ public class GuiFeld1 extends JFrame {
         }
     }
 
-    //Öffnet das Fenster mit dem Operator für Subtraktion
+    //// Opens the window with the operator for subtraction
     private void FensterSubtrahieren(){
         if (this.operator.equals("-")){
             setVisible(false);
@@ -68,7 +68,7 @@ public class GuiFeld1 extends JFrame {
         }
     }
 
-    //Öffnet das Fenster mit dem Operator für Multiplikation
+    //Opens the window with the operator for multiplication
     private void FensterMultiplizieren(){
         if (this.operator.equals("x")){
             setVisible(false);
@@ -77,7 +77,7 @@ public class GuiFeld1 extends JFrame {
         }
     }
 
-    //Öffnet das Fenster mit dem Operator für Division
+    //Opens the window with the operator for division
     private void FensterDividieren(){
         if (this.operator.equals(":")){
             setVisible(false);
@@ -86,7 +86,7 @@ public class GuiFeld1 extends JFrame {
         }
     }
 
-    //Öffnet das Fenster für hoch2
+    //Opens the window for square number calculations
     public void FensterHoch2(){
         if (this.operator.equals("²")){
             GuiFeld1 Hoch2 = new GuiFeld1("Rechner", "²");
@@ -95,7 +95,7 @@ public class GuiFeld1 extends JFrame {
         }
     }
 
-    //Initialisiert die Componenten des Rechners
+    //Initializes the components of the calculator
     private void initComponents() {
         Operator1 = new JLabel(operator + "                            ");
 
@@ -127,7 +127,7 @@ public class GuiFeld1 extends JFrame {
 
         });
 
-        //Funktion des + Buttons
+        //Function of the plus button
         Addieren = new JButton("+");
         Addieren.addActionListener(new ActionListener() {
             @Override
@@ -137,7 +137,7 @@ public class GuiFeld1 extends JFrame {
             }
         });
 
-        //Funktion des - Buttons
+        //Function of the minus button
         Subtrahieren = new JButton("-");
         Subtrahieren.addActionListener(new ActionListener() {
             @Override
@@ -147,7 +147,7 @@ public class GuiFeld1 extends JFrame {
             }
         });
 
-        //Funktion des x Buttons
+        //Function of the multiply button
         Multiplizieren = new JButton("x");
         Multiplizieren.addActionListener(new ActionListener() {
             @Override
@@ -157,7 +157,7 @@ public class GuiFeld1 extends JFrame {
             }
         });
 
-        //Funktion des : Buttons
+        //Function of the divide button
         Dividieren = new JButton(":");
         Dividieren.addActionListener(new ActionListener() {
             @Override
@@ -167,7 +167,7 @@ public class GuiFeld1 extends JFrame {
             }
         });
 
-        //Funktion des ² Buttons
+        //Function of the square button
         hoch2 = new JButton("²");
         hoch2.addActionListener(new ActionListener() {
             @Override

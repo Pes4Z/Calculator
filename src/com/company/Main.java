@@ -33,7 +33,7 @@ public class Main extends JFrame {
     }
 
 
-    //Die Methode um ein Gui für Operatoren zu erstellen
+    //The Methode to create a new Gui for Operations
     public Main(String titel, String operator){
 
         this.operator = operator;
@@ -64,7 +64,7 @@ public class Main extends JFrame {
     }
 
     
-    //Öffnet das Fenster mit dem Operator für Addition
+    //Opens the window with the operator for addition
     private void FensterAddition() {
         if (this.operator.equals("+")) {
             setVisible(false);
@@ -73,7 +73,7 @@ public class Main extends JFrame {
         }
     }
 
-    //Öffnet das Fenster mit dem Operator für Subtraktion
+    //// Opens the window with the operator for subtraction
     private void FensterSubtrahieren(){
         if (this.operator.equals("-")){
             setVisible(false);
@@ -82,7 +82,7 @@ public class Main extends JFrame {
         }
     }
 
-    //Öffnet das Fenster mit dem Operator für Multiplikation
+    //Opens the window with the operator for multiplication
     private void FensterMultiplizieren(){
         if (this.operator.equals("x")){
             setVisible(false);
@@ -91,7 +91,7 @@ public class Main extends JFrame {
         }
     }
 
-    //Öffnet das Fenster mit dem Operator für Division
+    //Opens the window with the operator for division
     private void FensterDividieren(){
         if (this.operator.equals(":")){
             setVisible(false);
@@ -100,14 +100,14 @@ public class Main extends JFrame {
         }
     }
 
-    //Schließt das zurzeit geöffnete Fenster
+    //Closes the currently open gui
     private void FensterSchließen(){
         setVisible(false);
     }
 
 
 
-    //Initialisiert die Componenten des Rechners
+    //Initializes the components of the calculator
     private void initComponents() {
         Operator1 = new JLabel(operator);
 
@@ -148,7 +148,7 @@ public class Main extends JFrame {
 
         });
 
-        //Funktion des + Buttons
+        //Function of the plus button
         Addieren = new JButton("+");
         Addieren.addActionListener(new ActionListener() {
             @Override
@@ -158,7 +158,7 @@ public class Main extends JFrame {
             }
         });
 
-        //Funktion des - Buttons
+        //Function of the minus button
         Subtrahieren = new JButton("-");
         Subtrahieren.addActionListener(new ActionListener() {
             @Override
@@ -168,7 +168,7 @@ public class Main extends JFrame {
             }
         });
 
-        //Funktion des x Buttons
+        //Function of the multiply button
         Multiplizieren = new JButton("x");
         Multiplizieren.addActionListener(new ActionListener() {
             @Override
@@ -178,7 +178,7 @@ public class Main extends JFrame {
             }
         });
 
-        //Funktion des : Buttons
+        //Function of the divide button
         Dividieren = new JButton(":");
         Dividieren.addActionListener(new ActionListener() {
             @Override
@@ -188,7 +188,7 @@ public class Main extends JFrame {
             }
         });
 
-        //Funktion des ² Buttons
+        //Function of the square button
         hoch2 = new JButton("²");
         hoch2.addActionListener(new ActionListener() {
             @Override
